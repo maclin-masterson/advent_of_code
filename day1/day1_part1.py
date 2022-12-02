@@ -1,5 +1,9 @@
+
+#TODO: create file object
+
+
 elves = []
-with open('input1.txt', 'r', encoding="utf-8") as f:
+with open('day1/input1.txt', 'r', encoding="utf-8") as f:
     lines = f.readlines()
 
     cals = 0
@@ -11,6 +15,4 @@ with open('input1.txt', 'r', encoding="utf-8") as f:
             cals = 0
 
 
-sorted_elves = sorted(elves, reverse=True)
-
-print(sum(sorted_elves[0:3]))
+print(max(elves))
